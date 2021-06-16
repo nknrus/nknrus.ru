@@ -40,5 +40,5 @@ DIR="/home/$username/nkn-commercial/services/nkn-node/"
   			wget -O - "$websource" -q --show-progress | tar -xzf -
                         chown -R $username:$username wallet.* > /dev/null 2>&1
                         chown -R $username:$username ChainDB/ > /dev/null 2>&1
-                        printf "NKNRUS.RU - Скачаивание файла................. Выполнено!\n"
+                        printf "NKNRUS.RU - Скачивание файла................. Выполнено!\n"
                         systemctl start nkn-commercial.service > /dev/null 2>&1
