@@ -23,7 +23,7 @@ chown -c $username:$username nkn-commercial/ > /dev/null 2>&1
 printf "DONE!\n"
 printf "sleep 180"
 
-Ожидаем 180 секунд
+printf "Ожидаем 180 секунд!\n"
 
 DIR="/home/$username/nkn-commercial/services/nkn-node/"
 
