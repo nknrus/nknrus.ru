@@ -15,7 +15,7 @@ usermod -a -G sudo "$username" > /dev/null 2>&1
 printf "NKNRUS.RU Установка майнера.................................... "
 cd /home/$username > /dev/null 2>&1
 wget --quiet --continue --show-progress https://commercial.nkn.org/downloads/nkn-commercial/linux-amd64.zip > /dev/null 2>&1
-printf "DONE!\n"
+printf "Выполнено!\n"
 
 printf "NKNRUS.RU Установка майнера.................................... "
 unzip linux-amd64.zip > /dev/null 2>&1
@@ -23,7 +23,7 @@ mv linux-amd64 nkn-commercial > /dev/null 2>&1
 chown -c $username:$username nkn-commercial/ > /dev/null 2>&1
 /home/$username/nkn-commercial/nkn-commercial -b $benaddress -d /home/$username/nkn-commercial/ -u $username install > /dev/null 2>&1
 printf "Выполнено!\n"
-printf "sleep 180"
+printf "Ждем 180 секунд"
 
 sleep 180
 
